@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Emily Anderson Writing Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--Boostrap CSS END-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Outfit:wght@100;200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md" id="navMargin" stlye="background-color: white;">
+        <a class="navbar-brand logo" href="#">EMILY ANDERSON</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav auto2">
+                <li class="nav-item">
+                    <a class="nav-link text-nowrap mx-2" href="./index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown nav-link text-nowrap mx-2"> <a href="./work.html"> Work </a>
+                        <div class="dropdown-content">
+                            <a class="dropdown-item" type="button" href="./essays.html">Essays</a>
+                            <a class="dropdown-item" type="button" href="./blogs.html">Blogs</a>
+                            <a class="dropdown-item" type="button" href="./research.html">Research</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-nowrap mx-2" href="./resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-nowrap mx-2" href="./contact.html">Contact</a>
+                </li>
+                <!-- Add more navbar items here -->
+            </ul>
+        </div>
+    </nav>
+
+    <!--
+    <div class="nav row">
+        <div class="auto1">
+            <div class="col-7 logo">
+                <a href="./index.html">EMILY ANDERSON</a>
+            </div>
+            <!-"auto 2" means the box that the nav label items are in within the larger "auto 1" autolayout that includes the logo
+            <!-navbar STARTS
+            <div class="col-5 auto2">
+                <a href="./about.html" id="about" class="auto2 label">About</a>
+                <div class="auto2 label dropdown">
+                    Work
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" type="button">Essays</a>
+                        <a class="dropdown-item" type="button">Blogs</a>
+                        <a class="dropdown-item" type="button">Research</a>
+                    </div>
+                </div>
+                <a href="./resume.html" id="resume" class="auto2 label">Resume</a>
+                <a href="./contact.html" id="contact" class="auto2 label">Contact</a>
+            </div>
+        </div>
+    </div>
+    -->
+    <section>
+        <div class="contactSection">
+           <div class="blogTitle">
+            <h1>Contact</h1>
+           </div>
+            
+
+            <div>
+                <h9>Email</h9>
+                <h9>LinkedIn</h9>
+          
+            </div>
+        </div>
+    </section>
+
+ <!--footer as described in instructions-->
+ <div class="row footerChunk">
+    <a class="footerLogo">EMILY ANDERSON</a>
+    <a class="footerLink" href="./index.html">About</a>
+    <a class="footerLink" href="./work.html">Work</a>
+    <a class="footerLink" href="./resume.html">Resume</a>
+    <a class="footerLink" href="#">Contact</a>
+</div>
+
+    <script>
+        // Get the dropdown button and dropdown content
+        const dropdown = document.querySelector(".dropdown");
+        const dropdownContent = document.querySelector(".dropdown-content");
+
+        // Show the dropdown when the mouse enters the "Work" item
+        dropdown.addEventListener("mouseenter", () => {
+            dropdownContent.style.display = "block";
+        });
+
+        // Hide the dropdown when the mouse leaves the dropdown area
+        dropdown.addEventListener("mouseleave", () => {
+            dropdownContent.style.display = "none";
+        });
+
+    </script>
+</body>
+
+</html>

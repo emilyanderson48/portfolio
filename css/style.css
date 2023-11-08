@@ -1,0 +1,1087 @@
+/* high-level styling START */
+
+body {
+    font-family: outfit !important;
+}
+
+p {
+    font-family: sf pro text;
+}
+
+p a {
+    color: #1b67d9 !important;
+}
+
+p a:hover {
+    text-decoration: underline !important;
+}
+
+
+/* headers START */
+    h1 {
+    font-size: 1.75rem !important;
+    }
+
+
+    h2 {
+    padding-left: 13.5rem;
+    padding-top: 4rem;
+    font-size: 2.5rem;
+    }
+
+    /* h3 not in use */
+
+
+    h4 {
+    font-size: 2rem;
+    }
+
+    /* h5 not in use */
+    /* h6 not in use */
+    /* h7 not in use */
+    /* h8 not in use */
+    h9 {
+    font-size: 1.45rem;
+    font-weight: 550;
+    }
+
+    h10 {
+    font-size: 1.2rem;
+    font-weight: 508;
+    }
+
+    h11 {
+    font-size: 1.15rem;
+    font-weight: 450;
+    }
+
+    h12 {
+    font: 1rem;
+    font-weight: 300;
+    }
+
+        /* h13 not in use */
+    h14 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    align-self: center;
+    }
+
+    h15 {
+    font-size: 1rem;
+    }
+
+    h16 {
+    font-size: 1rem;
+    }
+
+/* headers END */
+
+/* links */
+a {
+    text-decoration: none !important;
+    color: black !important;
+    text-wrap: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* high--level styling END */
+
+
+
+
+/* index styling START */
+
+.container {
+    margin-right: 0!important;
+    margin-left: 0!important;
+    padding-right: 0!important;
+    padding-left: 0!important;
+    max-width: 100%!important;
+}
+
+    /* card styling */
+
+    .card {
+        /* this border doesn't show up on index because index is technically only the header */
+        border: .25px solid blackt;
+        border-radius: 0 !important;
+        width: 35rem;
+        overflow: hidden; /* Clip content that overflows the card */
+        position: relative; /* Create a positioning context */
+    }
+    .indexCard {
+        /* this border doesn't show up on index because index is technically only the header */
+        border: .25px solid blackt;
+        border-radius: 0 !important;
+        width: 35rem;
+        overflow: hidden; /* Clip content that overflows the card */
+        position: relative; /* Create a positioning context */
+    }
+    .indexCard:hover {
+        /* this border doesn't show up on index because index is technically only the header */
+        border: .25px solid blackt;
+        border-radius: 0 !important;
+        width: 35rem;
+        overflow: hidden; /* Clip content that overflows the card */
+        position: relative; /* Create a positioning context */
+    }
+    .card-img {
+        justify-content: center;
+        width: 20.125rem;
+        height: 33.0625rem;
+        
+    }
+    .card-img-overlay {
+        position: relative;
+        overflow: hidden; /* Clip content that overflows the card */
+      }
+    .clipImg {
+        width: 100%; /* Make the image full width of the card */
+        position: absolute; /* Position the image absolutely within the card */
+        top: 0; /* Align the image to the bottom */
+        transform: translateY(50%); /* Translate the image upward by 50% of its height */
+        object-fit: none; /* Maintain aspect ratio and cover the entire card */
+        z-index: 1; /* Place the image behind the card content */
+    }
+
+    .card {
+        position: relative;
+        /* Set the card width and height as desired */
+        width: 30rem;
+        height: 20rem!important;
+      }
+      
+      .card-img-overlay {
+        position: relative;
+        overflow: hidden; /* Clip content that overflows the card */
+      }
+      
+      .image-wrapper {
+        width: 100%; /* Make the image wrapper full width of the card */
+        height: 100%; /* Make the image wrapper full height of the card */
+        overflow: hidden; /* Clip the image within the wrapper */
+        z-index: -100;
+      }
+      
+      .clipped-image {
+        width: 100%; /* Make the image full width of the wrapper */
+        height: auto; /* Allow the image to maintain its aspect ratio */
+        position: absolute; /* Position the image absolutely within the wrapper */
+        object-fit: none; /* Maintain aspect ratio and cover the entire wrapper */
+        top: 50%; /* Center the image vertically */
+        transform: translateY(-35%); /* Adjust the vertical position */
+      }
+      
+      .clipped-image:hover {
+        transform: translateY(-40%);
+       
+      }
+    .card-title {
+    
+    }
+
+
+    .card-text {
+        width: 100%;
+        color: black;
+    }
+    
+    .card-textB {
+        width: 100%;
+        color: black;
+    }
+    
+    
+    .cardHeaderB {
+    background-color: #3B4968;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    }
+
+    .card-body {
+        width: 100%;
+    
+    
+    }
+    
+    .cardHeader {
+        background-color: #89A9F1;
+        color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+    
+    
+    .cardHeaderC {
+        background-color: #3B4968;
+        color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+    
+    
+    .indexCardHeader {
+        background-color: white;
+        color: black;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        text-align: left;
+        padding-left: 3.12rem;
+        padding-top: 1.12rem;
+        
+    }
+    
+    
+    .cardHeaderD:hover {
+        background-color: #3B4968;
+        color: white;
+    }
+    .cardHeaderC a {
+        color: white !important;
+    }
+    
+    .cardLinks {
+        border-bottom: black .25px solid;
+        color: black;
+        background-color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: left;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    
+    
+    }
+    
+    
+    .cardLinksB {
+        border-bottom: black .25px solid;
+        color: black;
+        background-color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: right !important;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    
+    }
+    
+    .cardLinksB:hover {
+        text-decoration: underline;
+    }
+    
+    .cardLinks a {
+    color: black !important;
+    }
+
+    .indexCardLink a {
+        color: white !important;
+    }
+    
+    .indexCardLink a:hover {
+        cursor: pointer;
+    }
+    
+
+    /* styling of mockups in cards */
+    .mockupB {
+        scale: 50%;
+    }
+
+    .backgroundImg {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/rrmock.svg');
+    background-size: cover; /* or 'contain' or custom values */
+    background-position: center center; /* or custom values */
+    background-repeat: no-repeat;
+    z-index: 100;
+    }
+
+/* index styling END */
+
+
+
+
+
+
+
+
+
+
+/* navbar STARTS */
+
+
+#navMargin {
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+
+}
+
+
+.navbar {}
+
+
+.docPrev {
+    justify-content: center !important;
+    align-items: center;
+    display: flex !important;
+    position: relative;
+    height: 50rem;
+    background-color: white;
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+
+
+
+
+}
+
+
+.doc {
+    position: abosulte;
+    left: 60rem !important;
+    right: 10rem !important;
+    width: 50rem;
+    height: 100%;
+    justify-content: center !important;
+    border: .75px #464646 solid;
+
+
+}
+
+
+.essayDescr {
+    position: relative;
+}
+
+.essayDescrItem {
+    position: absolute;
+    left: 10rem;
+
+
+    background: #D9D9D9;
+    width: 16.75rem !important;
+    height: 16.125rem !important;
+}
+
+
+
+
+.homeIcon {
+    scale: 40%;
+    display: inline-flex;
+    justify-self: center;
+}
+
+
+.homeIcon:hover {
+    cursor: pointer;
+
+
+}
+
+
+.nav-item {
+    display: inline-block;
+    font-size: 1.25rem;
+    line-height: normal;
+    padding-top: 1.56rem;
+    padding-bottom: 1.56rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* hover animations below -- keep labels and dropdown items consistent on hover animations*/
+
+
+.nav-item:hover {
+    font-weight: 550;
+
+
+}
+
+
+.dropdown-item:hover {
+    font-weight: 575;
+}
+
+
+
+
+.active {
+    text-decoration: underline;
+}
+
+
+.nav {
+    margin-left: 5.94rem !important;
+    margin-right: 5.94rem !important;
+}
+
+
+.auto1 {
+    background-color: white;
+    height: 6rem;
+    /* navbar drop shadow */
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.03);
+    padding-top: 4rem;
+    padding-left: 5.94rem;
+    margin-right: 5.94rem;
+    /*
+    padding-right: 5.94rem;
+    */
+
+
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.auto2 {
+    display: inline-block;
+    margin-left: auto;
+
+
+}
+
+
+
+
+.logo {
+
+
+    font-size: 2rem !important;
+    text-decoration: none;
+    font-family: outfit;
+
+
+}
+
+
+
+
+.largeLogo {
+    font-size: 5.125rem;
+    font-weight: 400;
+    font-style: normal;
+    width: 49.5rem;
+    height: 19.5rem;
+    padding-left: 5.5rem;
+    padding-right: 65 rem;
+    display: inline-block;
+    position: relative;
+    top: -8.56rem;
+}
+
+
+
+
+/* dropdown styling from chat GPT */
+/* Hide the dropdown content */
+.dropdown-content {
+    display: none;
+}
+
+
+/* Style the dropdown button */
+.dropdown {
+    position: relative;
+}
+
+
+/* Style the dropdown content */
+.dropdown-content {
+    padding-left: .5rem !important;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    filter: blur(100);
+
+
+    min-width: 160px;
+    z-index: 1;
+    font-family: outfit;
+    font-size: 1.15rem;
+
+
+}
+
+
+/* Style the dropdown items (buttons) */
+.dropdown-item {
+    padding: .5rem !important;
+    text-align: left;
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Change the background color of dropdown items on hover */
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/*navbar ENDS*/
+/* general casestudy formatting START */
+.caseStudyTitle {
+    margin-left: 15rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+/* general casestudy formatting END */
+
+
+/* casestudy_rr START */
+/* this is making the entire case study div have 6.25rem of left padding */
+ #projOverview {
+    padding-left: 6.25rem;
+ }
+ /* this is making the height of every slide the same */
+ .slide {
+    height: 52.375rem;
+ }
+
+.valueProp {
+    margin-top: 4rem;
+    margin-bottom: 3.04rem;
+    }
+  .imageContainer img {
+    width: 100%
+  }
+ /* "roundedLabel" meant to signify "rounded background" i.e. text with rounded background */
+ .rr1roundedLabel {
+    background-color: #618291;
+    color: white;
+    text-align: center;
+    border-radius: 2.475rem;
+    height: 3rem;
+    width: 11rem;
+    align-items: bottom;
+ }
+ .roundedLabelText {
+    padding-top: .82rem;
+ }
+.topRoundedLabel{
+     margin-top:2rem;
+}
+ 
+ /* text content "descr1" and "descr2" need specific padding relative to the rounded labels ("roundedLabels") */
+ 
+    /* naming everything on "project overview" rr1___ to not conflict with similar naming conventions on other case studies */
+ .rr1descr1 {
+    padding-top: 1.22rem;
+    padding-bottom: 3.44rem;
+ }
+ 
+ 
+ .rr1descr2 {
+    padding-top: 1.03rem;
+ 
+
+ }
+ .rr1PetImg {
+    scale: 50%;
+    width: 10.296rem;
+    height: 29.65606rem;
+    padding-right: 1.54rem;
+ }
+ 
+ 
+ /* begin "semiSlide" (insert between slides 1 & 2) */
+ 
+ 
+ #rrSemiSlide {
+    height: 12rem;
+    display: inline-block;
+    max-width: 1728px;
+   
+ }
+ 
+ .rrSemiSlide {
+    max-width: 1728px;
+    scale: 90%;
+    margin-left: 2rem;
+ }
+
+ .chatColumn {
+   align-self: center;
+  
+ }
+ 
+ 
+ .personColumn {
+    align-self: center;
+   
+ }
+ 
+ 
+ .chatBlurb {
+    scale: 95%;
+    padding: 2rem 0rem;
+ }
+ .personBubble {
+    scale: 95%;
+    padding: 2rem 0rem;
+ }
+ #researchInsights {
+    background: #E7ECEF;
+    padding-left: 6.25rem;
+    max-width: 1728px;
+ }
+ .researchStuff {
+    width: 100%;
+    justify-content: center;
+  
+ }
+ 
+ 
+ .researchBlob {
+    height: 28.7rem;
+ 
+ 
+    background-color: #122B37;
+    color: white;
+    text-align: center;
+    /*
+    padding-right: 2.31rem;
+    padding-left: 2.31rem;
+    */
+    border-top-right-radius: 23.4375rem;
+    border-top-left-radius: 23.4375rem;
+ }
+ .card-text {
+    width: 100%;
+ }
+ 
+ 
+ .card-body {
+    width: 100%;
+ }
+ .icon1 {
+    width: 3.36rem;
+    padding-bottom: 3.94rem;
+    padding-top: 2.5rem;
+ }
+ 
+ 
+ .usabilityTestDescr {
+    background: ##D9F6FF;
+ }
+ .descr1of3 {
+    padding-top: 2.31rem;
+    padding-bottom: 3.88rem;
+    padding-left: 1.53rem;
+ 
+ 
+ }
+ 
+ 
+ .descr2of3 {
+    padding-bottom: 3.88rem;
+    padding-left: 1.53rem;
+   
+ }
+ .descr3of3 {
+    padding-bottom: 6.94rem;
+    padding-left: 1.53rem;
+ }
+ 
+ 
+ .synthesisDiagram {
+    width: 80%;
+ }
+ 
+ 
+   .sideAccent {
+    background: #007bff;
+    width: 15px;
+  }
+ 
+/* casestudy_rr END */
+
+
+.subHolder {
+    display: flex;
+    align-items: center;
+}
+
+.subNav {
+    display: inline-block;
+    margin-top: 0rem;
+    margin-left: 5rem !important;
+
+
+}
+
+.subNav a:hover {
+    text-decoration: underline !important;
+}
+
+.subH12 {
+    align-self: center;
+    vertical-align: center;
+}
+
+
+body {
+    font-family: outfit;
+    font-size: 1.15rem;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.resumeHeaderGroup {
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+
+
+.image {
+    justify-content: left;
+    align-items: center;
+}
+
+
+.resumeSection p {
+    margin-bottom: .5em;
+
+
+}
+
+
+/* begin Research Insights (row 3) */
+
+
+
+
+
+.workStuff {
+    width: 100%;
+    justify-content: center;
+}
+
+
+.mainInfo {
+    height: 40rem;
+    position: relativve;
+}
+
+.mainDescr {
+    margin-left: 10rem;
+    margin-top: 10rem;
+}
+
+.imgPlacement {
+
+
+    position: absolute;
+    top: 6rem !important;
+    right: 1rem;
+}
+
+.mainImg {
+    scale: 60%;
+    float: right;
+}
+
+
+
+
+
+
+
+
+.paperBlurb {
+    padding-top: 1rem;
+}
+
+
+.icon1B {
+    width: 2.081rem !important;
+    height: 2.08094rem !important;
+    align-self: center !important;
+    padding-bottom: .75rem;
+}
+
+
+
+
+/* cards specific to research description on research.html */
+.researchBox {
+    position: absolute;
+    height: 28.7rem;
+    background-color: #3B4968 !important;
+    color: white;
+    text-align: center;
+}
+
+.researchBlobHolder {
+    postion: relative;
+}
+
+
+.researchBlobHolder2 {
+    position: absolute !important;
+    left: 7rem !important;
+    padding-top: 4rem;
+
+
+    z-index: 100;
+}
+
+.icon1 {
+    width: 2.081rem !important;
+    height: 2.08094rem !important;
+    align-self: center !important;
+    padding-bottom: .75rem;
+}
+
+.icon1D {
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+    align-self: center !important;
+    padding-bottom: .5rem;
+}
+
+/* original title "researchBlob" */
+.researchBlob {
+    height: 28.7rem;
+    background-color: #3B4968 !important;
+    color: white;
+    text-align: center;
+    /*
+    padding-right: 2.31rem;
+    padding-left: 2.31rem;
+    */
+}
+
+
+.researchBlob a {
+    color: white !important;
+}
+
+
+.researchBlob a:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+.icon1about {
+    width: 2.081rem !important;
+    height: 2.08094rem !important;
+    align-self: center !important;
+    padding-bottom: .75rem;
+}
+
+
+
+.contArrow {
+    scale: 75%;
+    float: right;
+    padding-top: .35rem;
+}
+
+
+.backArrow {
+    scale: 67%;
+    float: left;
+    padding-top: .35rem;
+}
+
+
+.tertNav {
+    margin-left: 6.25rem;
+    padding-top: 2rem;
+}
+
+
+.tertNav:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.contArrowB {
+    scale: 75%;
+    float: right;
+    padding-top: .35rem;
+    padding-left: .5rem;
+}
+
+
+
+/* blog section START */
+
+
+.blogTitle {
+    text-align: center;
+}
+
+.blogLanding {
+    margin-left: 24rem;
+    margin-right: 24rem;
+}
+
+.blogLandTitle {
+
+
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.blogTitle {
+    text-align: center !important;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+.blogSection {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+
+.resumeSection {
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+
+.contactSection {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+
+.essaySection {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+
+/* blog section END */
+
+
+
+
+.aboutMe {
+    width: 49.5rem;
+    padding-left: 13.5rem;
+    padding-top: 4rem;
+}
+
+
+
+
+.homeDescr {
+    width: 49.5rem;
+    padding-left: 13.5rem;
+    padding-top: 4rem;
+}
+
+
+.footerLogo {
+    color: white !important;
+    padding-bottom: 1.25rem;
+}
+
+
+.footerLink {
+    color: white !important;
+    padding-bottom: .4rem;
+}
+
+
+.footerLink:hover {
+    text-decoration: underline !important;
+    cursor: pointer;
+
+
+}
+
+
+.footerChunk {
+    margin-top: 6rem !important;
+    background-color: black;
+    padding-left: 5rem !important;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 600) {}
+
+
+@media (min-width:601px) and (max-width: 1024px) {}
+
+
+
+
+
+
+
+
+@media (min-width:1025px) and (max-width: 1333px) {}
+
+
+
+
+@media (min-width:1334px) and (max-width: 1363px) {}
+
+
+@media (min-width:1364) and (max-width: 1464px) {}
+
+
+
+
+@media (min-width:1465) and (max-width: 1528px) {}
+
+
+@media (min-width:1529px) and (max-width: 1557px) {}
