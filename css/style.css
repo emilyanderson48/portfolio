@@ -18,62 +18,62 @@ p a:hover {
 
 
 /* headers START */
-    h1 {
+h1 {
     font-size: 1.75rem !important;
-    }
+}
 
 
-    h2 {
+h2 {
     padding-left: 13.5rem;
     padding-top: 4rem;
     font-size: 2.5rem;
-    }
+}
 
-    /* h3 not in use */
+/* h3 not in use */
 
 
-    h4 {
+h4 {
     font-size: 2rem;
-    }
+}
 
-    /* h5 not in use */
-    /* h6 not in use */
-    /* h7 not in use */
-    /* h8 not in use */
-    h9 {
+/* h5 not in use */
+/* h6 not in use */
+/* h7 not in use */
+/* h8 not in use */
+h9 {
     font-size: 1.45rem;
     font-weight: 550;
-    }
+}
 
-    h10 {
+h10 {
     font-size: 1.2rem;
     font-weight: 508;
-    }
+}
 
-    h11 {
+h11 {
     font-size: 1.15rem;
     font-weight: 450;
-    }
+}
 
-    h12 {
+h12 {
     font: 1rem;
     font-weight: 300;
-    }
+}
 
-        /* h13 not in use */
-    h14 {
+/* h13 not in use */
+h14 {
     font-size: 1.5rem;
     font-weight: 400;
     align-self: center;
-    }
+}
 
-    h15 {
+h15 {
     font-size: 1rem;
-    }
+}
 
-    h16 {
+h16 {
     font-size: 1rem;
-    }
+}
 
 /* headers END */
 
@@ -96,215 +96,318 @@ a:hover {
 /* index styling START */
 
 .container {
-    margin-right: 0!important;
-    margin-left: 0!important;
-    padding-right: 0!important;
-    padding-left: 0!important;
-    max-width: 100%!important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    max-width: 100% !important;
 }
 
-    /* card styling */
+/* card styling */
 
-    .card {
-        /* this border doesn't show up on index because index is technically only the header */
-        border: .25px solid blackt;
-        border-radius: 0 !important;
-        width: 35rem;
-        overflow: hidden; /* Clip content that overflows the card */
-        position: relative; /* Create a positioning context */
-    }
-    .indexCard {
-        /* this border doesn't show up on index because index is technically only the header */
-        border: .25px solid blackt;
-        border-radius: 0 !important;
-        width: 35rem;
-        overflow: hidden; /* Clip content that overflows the card */
-        position: relative; /* Create a positioning context */
-    }
-    .indexCard:hover {
-        /* this border doesn't show up on index because index is technically only the header */
-        border: .25px solid blackt;
-        border-radius: 0 !important;
-        width: 35rem;
-        overflow: hidden; /* Clip content that overflows the card */
-        position: relative; /* Create a positioning context */
-    }
-    .card-img {
-        justify-content: center;
-        width: 20.125rem;
-        height: 33.0625rem;
-        
-    }
-    .card-img-overlay {
-        position: relative;
-        overflow: hidden; /* Clip content that overflows the card */
-      }
-    .clipImg {
-        width: 100%; /* Make the image full width of the card */
-        position: absolute; /* Position the image absolutely within the card */
-        top: 0; /* Align the image to the bottom */
-        transform: translateY(50%); /* Translate the image upward by 50% of its height */
-        object-fit: none; /* Maintain aspect ratio and cover the entire card */
-        z-index: 1; /* Place the image behind the card content */
-    }
+.card {
+    /* this border doesn't show up on index because index is technically only the header */
+    border: .25px solid blackt;
+    border-radius: 0 !important;
+    width: 35rem;
+    overflow: hidden;
+    /* Clip content that overflows the card */
+    position: relative;
+    /* Create a positioning context */
+}
 
-    .card {
-        position: relative;
-        /* Set the card width and height as desired */
-        width: 30rem;
-        height: 20rem!important;
-      }
-      
-      .card-img-overlay {
-        position: relative;
-        overflow: hidden; /* Clip content that overflows the card */
-      }
-      
-      .image-wrapper {
-        width: 100%; /* Make the image wrapper full width of the card */
-        height: 100%; /* Make the image wrapper full height of the card */
-        overflow: hidden; /* Clip the image within the wrapper */
-        z-index: -100;
-      }
-      
-      .clipped-image {
-        width: 100%; /* Make the image full width of the wrapper */
-        height: auto; /* Allow the image to maintain its aspect ratio */
-        position: absolute; /* Position the image absolutely within the wrapper */
-        object-fit: none; /* Maintain aspect ratio and cover the entire wrapper */
-        top: 50%; /* Center the image vertically */
-        transform: translateY(-35%); /* Adjust the vertical position */
-      }
-      
-      .clipped-image:hover {
-        transform: translateY(-40%);
-       
-      }
-    .card-title {
-    
-    }
+.card:hover {}
+
+.indexCard {
+    /* this border doesn't show up on index because index is technically only the header */
+    border: .25px solid blackt;
+    border-radius: 0 !important;
+    width: 35rem;
+    overflow: hidden;
+    /* Clip content that overflows the card */
+    position: relative;
+    /* Create a positioning context */
+}
+
+.indexCard:hover {
+    /* this border doesn't show up on index because index is technically only the header */
+    border: .25px solid blackt;
+    border-radius: 0 !important;
+    width: 35rem;
+    overflow: hidden;
+    /* Clip content that overflows the card */
+    position: relative;
+    /* Create a positioning context */
+
+}
+
+.card-img {
+    justify-content: center;
+    width: 20.125rem;
+    height: 33.0625rem;
+
+}
+
+.card-img-overlay {
+    position: relative;
+    overflow: hidden;
+    /* Clip content that overflows the card */
+}
+
+.clipImg {
+    width: 100%;
+    /* Make the image full width of the card */
+    position: absolute;
+    /* Position the image absolutely within the card */
+    top: 0;
+    /* Align the image to the bottom */
+    transform: translateY(50%);
+    /* Translate the image upward by 50% of its height */
+    object-fit: none;
+    /* Maintain aspect ratio and cover the entire card */
+    z-index: 1;
+    /* Place the image behind the card content */
+}
+
+.card {
+    position: relative;
+    /* Set the card width and height as desired */
+    width: 30rem;
+    height: 20rem !important;
+}
+
+.card-img-overlay {
+    position: relative;
+    overflow: hidden;
+    /* Clip content that overflows the card */
+}
+
+.image-wrapper {
+    width: 100%;
+    /* Make the image wrapper full width of the card */
+    height: 100%;
+    /* Make the image wrapper full height of the card */
+    overflow: hidden;
+    /* Clip the image within the wrapper */
+    z-index: -100;
+}
+
+.clipped-image {
+    width: 100%;
+    /* Make the image full width of the wrapper */
+    height: auto;
+    /* Allow the image to maintain its aspect ratio */
+    position: absolute;
+    /* Position the image absolutely within the wrapper */
+    object-fit: none;
+    /* Maintain aspect ratio and cover the entire wrapper */
+    top: 50%;
+    /* Center the image vertically */
+    transform: translateY(-35%);
+    /* Adjust the vertical position */
+}
 
 
-    .card-text {
-        width: 100%;
-        color: black;
-    }
-    
-    .card-textB {
-        width: 100%;
-        color: black;
-    }
-    
-    
-    .cardHeaderB {
+.clipped-image:hover {
+    animation-name: card-phone-rise;
+    animation-duration: 1.2s;
+    animation-play-state: initial;
+    /*transform: translateY(-40%);*/
+    -webkit-animation-fill-mode: forwards;
+}
+
+.card-title {}
+
+
+.card-text {
+    width: 100%;
+    color: black;
+}
+
+.card-textB {
+    width: 100%;
+    color: black;
+}
+
+
+.cardHeaderB {
     background-color: #3B4968;
     color: white;
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
-    }
+}
 
-    .card-body {
-        width: 100%;
-    
-    
-    }
-    
-    .cardHeader {
-        background-color: #89A9F1;
-        color: white;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        text-align: center;
-    }
-    
-    
-    .cardHeaderC {
-        background-color: #3B4968;
-        color: white;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        text-align: center;
-    }
-    
-    
-    .indexCardHeader {
-        background-color: white;
-        color: black;
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-        text-align: left;
-        padding-left: 3.12rem;
-        padding-top: 1.12rem;
-        
-    }
-    
-    
-    .cardHeaderD:hover {
-        background-color: #3B4968;
-        color: white;
-    }
-    .cardHeaderC a {
-        color: white !important;
-    }
-    
-    .cardLinks {
-        border-bottom: black .25px solid;
-        color: black;
-        background-color: white;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        text-align: left;
-        padding-left: 3rem;
-        padding-right: 3rem;
-    
-    
-    }
-    
-    
-    .cardLinksB {
-        border-bottom: black .25px solid;
-        color: black;
-        background-color: white;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        text-align: right !important;
-        padding-left: 3rem;
-        padding-right: 3rem;
-    
-    }
-    
-    .cardLinksB:hover {
-        text-decoration: underline;
-    }
-    
-    .cardLinks a {
+.card-body {
+    width: 100%;
+
+
+}
+
+.cardHeader {
+    background-color: #89A9F1;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+
+.cardHeaderC {
+    background-color: #3B4968;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+
+.indexCardHeader {
+
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: left;
+    padding-left: 3.12rem;
+    padding-top: 1.12rem;
+
+
+}
+
+#rrPrev {
+    color: white;
+    background-color: #122B37;
+}
+
+.rrPrevDescr {
+    width: 12.9375rem;
+    height: 7.5rem;
+    color: black!important;
+}
+
+.toggle-div {
+    display: none;
+}
+
+.toggle-div.show {
+    display: flex;
+}
+
+#foraPrev {
+    color: white;
+    background-color: #3B4968;
+}
+
+#studiyoPrev {
+    color: white;
+    background-color: #073D3D;
+}
+
+#studyioPrev:hover {
+    color: black;
+    background-color: white;
+    animation: studiyo-color-change!important;
+    animation-duration: 1s;
+    animation-direction: forward;
+}
+
+#foraPrev:hover {
+    color: black;
+    background-color: white;
+    animation: fora-color-change;
+    animation-duration: 1s;
+    animation-direction: forward;
+}
+
+#rrPrev:hover {
+    animation: rr-color-change;
+    animation-duration: 1s;
+    animation-direction: forward;
+    color: black;
+    background-color: white;
+}
+
+
+
+.indexCardHeader:hover {
+    background-color: white;
+    color: black;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: left;
+    padding-left: 3.12rem;
+    padding-top: 1.12rem;
+
+}
+
+
+.cardHeaderD:hover {
+    background-color: #3B4968;
+    color: white;
+}
+
+.cardHeaderC a {
+    color: white !important;
+}
+
+.cardLinks {
+    border-bottom: black .25px solid;
+    color: black;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+
+}
+
+
+.cardLinksB {
+    border-bottom: black .25px solid;
+    color: black;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: right !important;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+}
+
+.cardLinksB:hover {
+    text-decoration: underline;
+}
+
+.cardLinks a {
     color: black !important;
-    }
+}
 
-    .indexCardLink a {
-        color: white !important;
-    }
-    
-    .indexCardLink a:hover {
-        cursor: pointer;
-    }
-    
+.indexCardLink a {
+    color: white !important;
+}
 
-    /* styling of mockups in cards */
-    .mockupB {
-        scale: 50%;
-    }
+.indexCardLink a:hover {
+    cursor: pointer;
+}
 
-    .backgroundImg {
+
+/* styling of mockups in cards */
+.mockupB {
+    scale: 50%;
+}
+
+.backgroundImg {
     width: 100%;
     height: 100%;
     background-image: url('images/rrmock.svg');
-    background-size: cover; /* or 'contain' or custom values */
-    background-position: center center; /* or custom values */
+    background-size: cover;
+    /* or 'contain' or custom values */
+    background-position: center center;
+    /* or custom values */
     background-repeat: no-repeat;
     z-index: 100;
-    }
+}
 
 /* index styling END */
 
@@ -550,28 +653,32 @@ a:hover {
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+
 /* general casestudy formatting END */
 
 
 /* casestudy_rr START */
 /* this is making the entire case study div have 6.25rem of left padding */
- #projOverview {
+#projOverview {
     padding-left: 6.25rem;
- }
- /* this is making the height of every slide the same */
- .slide {
+}
+
+/* this is making the height of every slide the same */
+.slide {
     height: 52.375rem;
- }
+}
 
 .valueProp {
     margin-top: 4rem;
     margin-bottom: 3.04rem;
-    }
-  .imageContainer img {
+}
+
+.imageContainer img {
     width: 100%
-  }
- /* "roundedLabel" meant to signify "rounded background" i.e. text with rounded background */
- .rr1roundedLabel {
+}
+
+/* "roundedLabel" meant to signify "rounded background" i.e. text with rounded background */
+.rr1roundedLabel {
     background-color: #618291;
     color: white;
     text-align: center;
@@ -579,88 +686,94 @@ a:hover {
     height: 3rem;
     width: 11rem;
     align-items: bottom;
- }
- .roundedLabelText {
-    padding-top: .82rem;
- }
-.topRoundedLabel{
-     margin-top:2rem;
 }
- 
- /* text content "descr1" and "descr2" need specific padding relative to the rounded labels ("roundedLabels") */
- 
-    /* naming everything on "project overview" rr1___ to not conflict with similar naming conventions on other case studies */
- .rr1descr1 {
+
+.roundedLabelText {
+    padding-top: .82rem;
+}
+
+.topRoundedLabel {
+    margin-top: 2rem;
+}
+
+/* text content "descr1" and "descr2" need specific padding relative to the rounded labels ("roundedLabels") */
+
+/* naming everything on "project overview" rr1___ to not conflict with similar naming conventions on other case studies */
+.rr1descr1 {
     padding-top: 1.22rem;
     padding-bottom: 3.44rem;
- }
- 
- 
- .rr1descr2 {
-    padding-top: 1.03rem;
- 
+}
 
- }
- .rr1PetImg {
+
+.rr1descr2 {
+    padding-top: 1.03rem;
+
+
+}
+
+.rr1PetImg {
     scale: 50%;
     width: 10.296rem;
     height: 29.65606rem;
     padding-right: 1.54rem;
- }
- 
- 
- /* begin "semiSlide" (insert between slides 1 & 2) */
- 
- 
- #rrSemiSlide {
+}
+
+
+/* begin "semiSlide" (insert between slides 1 & 2) */
+
+
+#rrSemiSlide {
     height: 12rem;
     display: inline-block;
     max-width: 1728px;
-   
- }
- 
- .rrSemiSlide {
+
+}
+
+.rrSemiSlide {
     max-width: 1728px;
     scale: 90%;
     margin-left: 2rem;
- }
+}
 
- .chatColumn {
-   align-self: center;
-  
- }
- 
- 
- .personColumn {
+.chatColumn {
     align-self: center;
-   
- }
- 
- 
- .chatBlurb {
+
+}
+
+
+.personColumn {
+    align-self: center;
+
+}
+
+
+.chatBlurb {
     scale: 95%;
     padding: 2rem 0rem;
- }
- .personBubble {
+}
+
+.personBubble {
     scale: 95%;
     padding: 2rem 0rem;
- }
- #researchInsights {
+}
+
+#researchInsights {
     background: #E7ECEF;
     padding-left: 6.25rem;
     max-width: 1728px;
- }
- .researchStuff {
+}
+
+.researchStuff {
     width: 100%;
     justify-content: center;
-  
- }
- 
- 
- .researchBlob {
+
+}
+
+
+.researchBlob {
     height: 28.7rem;
- 
- 
+
+
     background-color: #122B37;
     color: white;
     text-align: center;
@@ -670,55 +783,59 @@ a:hover {
     */
     border-top-right-radius: 23.4375rem;
     border-top-left-radius: 23.4375rem;
- }
- .card-text {
+}
+
+.card-text {
     width: 100%;
- }
- 
- 
- .card-body {
+}
+
+
+.card-body {
     width: 100%;
- }
- .icon1 {
+}
+
+.icon1 {
     width: 3.36rem;
     padding-bottom: 3.94rem;
     padding-top: 2.5rem;
- }
- 
- 
- .usabilityTestDescr {
+}
+
+
+.usabilityTestDescr {
     background: ##D9F6FF;
- }
- .descr1of3 {
+}
+
+.descr1of3 {
     padding-top: 2.31rem;
     padding-bottom: 3.88rem;
     padding-left: 1.53rem;
- 
- 
- }
- 
- 
- .descr2of3 {
+
+
+}
+
+
+.descr2of3 {
     padding-bottom: 3.88rem;
     padding-left: 1.53rem;
-   
- }
- .descr3of3 {
+
+}
+
+.descr3of3 {
     padding-bottom: 6.94rem;
     padding-left: 1.53rem;
- }
- 
- 
- .synthesisDiagram {
+}
+
+
+.synthesisDiagram {
     width: 80%;
- }
- 
- 
-   .sideAccent {
+}
+
+
+.sideAccent {
     background: #007bff;
     width: 15px;
-  }
- 
+}
+
 /* casestudy_rr END */
 
 
@@ -1054,6 +1171,48 @@ body {
 
 }
 
+/* animations START */
+@keyframes card-phone-rise {
+    from {
+        transform: translateY(-35%);
+    }
+
+    to {
+        transform: translateY(-45%);
+    }
+}
+
+@keyframes rr-color-change {
+    from {
+        background-color: #122B37;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+@keyframes fora-color-change {
+    from {
+        background-color: #3B4968;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+@keyframes studiyo-color-change {
+    from {
+        background-color:#073D3D;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+/* animations END */
 
 /* Media Queries */
 @media only screen and (max-width: 600) {}
