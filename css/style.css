@@ -1,11 +1,11 @@
-/* high-level styling START */
+/* high-le{vel styling START */
 
 body {
     font-family: outfit !important;
 }
 
 p {
-    font-family: sf pro text;
+    font-family: outfit;
 }
 
 p a {
@@ -29,13 +29,24 @@ h2 {
     font-size: 2.5rem;
 }
 
-/* h3 not in use */
 
+ h3 {
+    font-size: 1.15rem!important;
+    text-transform: capitalize;
+    padding-top: 4.13rem;
+    line-height: 29.04px;
+ }
 
 h4 {
-    font-size: 2rem;
+
+    font-size: 1.75rem;
+    font-weight: 500!important;
+    line-height: .88px;
 }
 
+.slideTitles {
+    max-width: 15rem!important;
+}
 /* h5 not in use */
 /* h6 not in use */
 /* h7 not in use */
@@ -149,6 +160,7 @@ a:hover {
 }
 
 .card-img-overlay {
+    z-index: 100;
     position: relative;
     overflow: hidden;
     /* Clip content that overflows the card */
@@ -193,7 +205,44 @@ a:hover {
 }
 
 .clipped-image {
-    width: 100%;
+
+    /* Make the image full width of the wrapper */
+    height: auto;
+    /* Allow the image to maintain its aspect ratio */
+    position: absolute;
+    /* Position the image absolutely within the wrapper */
+    object-fit: none;
+    /* Maintain aspect ratio and cover the entire wrapper */
+    right: 0.5rem;
+    top: 50%;
+    /* Center the image vertically */
+    transform: translateY(-35%);
+    /* Adjust the vertical position */
+}
+.here {
+    height: 20rem;
+}
+.scrolling {
+    z-index: 1;
+    display: flex;
+    font-size: 0;
+    margin-left: .1rem!important;
+}
+.scroll-item {
+    flex: ;
+}
+.scroll-container {
+    flex: 1;
+}
+.scroll-container2 {
+    flex: 1;
+}
+#scroll2 {
+   margin-top: -6rem;
+}
+.clipped-image2 {
+    z-index: .01;
+    scale: 90%;
     /* Make the image full width of the wrapper */
     height: auto;
     /* Allow the image to maintain its aspect ratio */
@@ -202,21 +251,38 @@ a:hover {
     object-fit: none;
     /* Maintain aspect ratio and cover the entire wrapper */
     top: 50%;
+    left: 0%;
     /* Center the image vertically */
     transform: translateY(-35%);
     /* Adjust the vertical position */
 }
 
 
-.clipped-image:hover {
+
+#rrPrev:hover .clipped-image {
     animation-name: card-phone-rise;
     animation-duration: 1.2s;
     animation-play-state: initial;
     /*transform: translateY(-40%);*/
     -webkit-animation-fill-mode: forwards;
 }
-
-.card-title {}
+#foraPrev:hover .clipped-image {
+    animation-name: card-phone-rise;
+    animation-duration: 1.2s;
+    animation-play-state: initial;
+    /*transform: translateY(-40%);*/
+    -webkit-animation-fill-mode: forwards;
+}
+#studiyoPrev:hover .clipped-image {
+    animation-name: card-phone-rise;
+    animation-duration: 1.2s;
+    animation-play-state: initial;
+    /*transform: translateY(-40%);*/
+    -webkit-animation-fill-mode: forwards;
+}
+.card-title {
+    z-index: 100!important;
+}
 
 
 .card-text {
@@ -263,21 +329,94 @@ a:hover {
 
 
 .indexCardHeader {
-
-    padding-top: 6rem;
+    z-index: 100!important;
     padding-bottom: 6rem;
     text-align: left;
     padding-left: 3.12rem;
     padding-top: 1.12rem;
-
+  
 
 }
 
+.rrabsGrad {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 16rem;
+    background: linear-gradient(180deg, #122B37 29.69%, #122B37 37.15%, rgba(20, 44, 56, 0.99) 41.42%, rgba(41, 57, 65, 0.90) 52.4%, rgba(47, 61, 68, 0.54) 63.55%, rgba(83, 83, 83, 0.00) 100%);
+    z-index: 60;
+}
+
+.studiyoabsGrad {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 16rem;
+    background: linear-gradient(180deg, #073D3D 38.58%, rgba(7, 61, 61, 0.95) 42.43%, rgba(7, 61, 61, 0.90) 46.13%, rgba(7, 61, 61, 0.79) 53.67%, rgba(7, 61, 61, 0.00) 80.93%);
+    z-index: 60;
+}
+.art1 {
+    position: absolute;
+    height:40rem;
+    left: 20rem;
+}
+.art2 {
+    position: absolute;
+    height:40rem;
+    right: 20rem;
+}
+.art3 {
+    position: absolute;
+    height:40rem;
+    left: 20rem;
+}
+.artCont {
+    position: relative;
+    height:40rem;
+}
+.foraabsGrad {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 15rem;
+    background: linear-gradient(180deg, #3B4968 29.69%, #3B4968 37.15%, #3B4968 41.42%, #3B4968 52.4%, #3B4968 63.55%, rgba(83, 83, 83, 0.00) 100%);
+    z-index: 60;
+}
+.rrgradient {
+    width: 100%;
+    height: 10rem;
+    background: linear-gradient(180deg, #122B37 29.69%, #122B37 37.15%, rgba(20, 44, 56, 0.99) 41.42%, rgba(41, 57, 65, 0.90) 52.4%, rgba(47, 61, 68, 0.54) 63.55%, rgba(83, 83, 83, 0.00) 100%);
+    
+}
+
+
+.custom-button {
+    color: white;
+    background-color: black!important;
+}
 #rrPrev {
     color: white;
     background-color: #122B37;
+    position: relative;
+}
+.another {
+    height: 20rem;
+    background: red;
 }
 
+.buttonViewWork {
+    text-decoration: none!important;
+    border-radius: 2rem;
+    padding:.5rem 1.75rem;
+    border: 0px;
+    color: white;
+    background-color: black;
+}
+.buttonViewWork:hover {
+   
+    color: black;
+    background-color: #B2DAFF;
+}
 .rrPrevDescr {
     width: 12.9375rem;
     height: 7.5rem;
@@ -302,10 +441,10 @@ a:hover {
     background-color: #073D3D;
 }
 
-#studyioPrev:hover {
+#studiyoPrev:hover {
     color: black;
     background-color: white;
-    animation: studiyo-color-change!important;
+    animation: sdiyo-color-change;
     animation-duration: 1s;
     animation-direction: forward;
 }
@@ -326,18 +465,17 @@ a:hover {
     background-color: white;
 }
 
-
-
-.indexCardHeader:hover {
-    background-color: white;
-    color: black;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    text-align: left;
-    padding-left: 3.12rem;
-    padding-top: 1.12rem;
-
+#rrPrev:hover .rrabsGrad {
+   display: none;
 }
+#studiyoPrev:hover .studiyoabsGrad {
+    display: none;
+ }
+#rrPrev:hover .additional-content {
+   display: block;
+}
+
+
 
 
 .cardHeaderD:hover {
@@ -411,9 +549,47 @@ a:hover {
 
 /* index styling END */
 
+.my-component {
+    max-width: 100%;
+    text-align: center;
+}
 
+/* STUDIYO START */
 
+#studiyo1  {
+    color: white;
+    background-color: #618484;
+}
 
+#studiyo1A {
+    
+}
+
+#studiyo2  {
+    color: black;
+    background-color: #F3F3EE;
+    background-image: url(./images/studiyo/studiyo2scissors.svg);
+    background-size: cover;
+    background-repeat: none;
+}
+
+#studiyo2group {
+    scale: 80%;
+}
+
+.studiyoProb {
+width: 12.875rem;
+height: 3.5625rem;
+scale: 90%;
+
+}
+
+#studiyo1groupbg {
+    background-color: white!important;
+    align-items: center!important;
+    justify-content: center!important;
+}
+/* STUDIYO END */
 
 
 
@@ -701,7 +877,7 @@ a:hover {
 /* naming everything on "project overview" rr1___ to not conflict with similar naming conventions on other case studies */
 .rr1descr1 {
     padding-top: 1.22rem;
-    padding-bottom: 3.44rem;
+    padding-bottom: 1.75rem;
 }
 
 
@@ -713,19 +889,23 @@ a:hover {
 
 .rr1PetImg {
     scale: 50%;
-    width: 10.296rem;
-    height: 29.65606rem;
+    float: top;
     padding-right: 1.54rem;
+    
 }
 
-
+.grid {
+    margin-left: 6.25rem!important;
+    margin-right: 6.25rem!important;
+}
 /* begin "semiSlide" (insert between slides 1 & 2) */
 
 
 #rrSemiSlide {
-    height: 12rem;
+    justify-self: center!important;
     display: inline-block;
-    max-width: 1728px;
+    margin-left: 12rem;
+
 
 }
 
@@ -1202,7 +1382,7 @@ body {
     }
 }
 
-@keyframes studiyo-color-change {
+@keyframes sdiyo-color-change {
     from {
         background-color:#073D3D;
     }

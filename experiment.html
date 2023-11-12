@@ -25,7 +25,90 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Outfit:wght@100;200;300;400;600;700;800;900&display=swap"
         rel="stylesheet">
+    <style>
+        /* Define default and variant styles */
+        .my-component {
+            /* Default styles */
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
 
+        .my-component:hover {
+            /* Variant styles on hover */
+            background-color: #e74c3c;
+        }
+
+        #rrPrev:hover .additional-content {
+            display: block;
+            color: black;
+        }
+
+        .my-component:hover .additional-content {
+            display: block;
+        }
+
+        .scroll-container {
+            white-space: nowrap;
+
+            animation: scroll 60s linear infinite;
+            /* Adjust the time as needed */
+            animation-direction: alternate;
+        }
+
+        .scroll-container2 {
+            white-space: nowrap;
+
+            animation: scroll2 60s linear infinite;
+            /* Adjust the time as needed */
+            animation-direction: alternate;
+        }
+
+        .additional-content {
+            display: none;
+            position: absolute;
+            text-align: left;
+            padding-top: 1rem;
+        }
+
+
+        #rrPrev:hover .scrolling {
+            display: none !important;
+        }
+
+        /* Define the animation keyframes */
+        @keyframes scroll {
+            0% {
+                transform: translateY(-200%);
+                /* Start offscreen to the right */
+            }
+
+            100% {
+                transform: translateX=Y(-200%);
+                /* Move offscreen to the left */
+            }
+        }
+
+        @keyframes scroll2 {
+            0% {
+                transform: translateY(-200%);
+                /* Start offscreen to the right */
+            }
+
+            100% {
+                transform: translateX=Y(-200%);
+                /* Move offscreen to the left */
+            }
+        }
+
+        /* Individual items inside the scrolling container */
+        .scroll-item {
+            display: flex;
+
+            /* Add your styling for the items */
+        }
+    </style>
 </head>
 
 
@@ -35,64 +118,112 @@
 <body>
 
 
+    <!-- HTML structure for your component -->
+    <div class="my-component">
+        <!-- Content goes here -->
+        Hover me!
+    </div>
 
-    <!--card container START-->
+    <!-- Container for scrolling content -->
+
+
     <div class="container-fluid">
         <div class="container">
             <div class="row">
 
                 <!-- card 1 start RR -->
-                
-                
-                <!--<div class="col-4">
-                    <div class="card indexCardLink" style="width: 35rem;">
-                        <a href="./rescueriders.html">
-                            <div class="indexCardHeader backgroundImg">
-                                <h14>Rescue Riders</h14>
-                                <h15>Non-Profit Redesign</h15>
-                                
-                                <div class="">
-                                 
-                                    <img src="./images/rrmock.svg" class="mockupA card-img-top">
+                <div class="col-4">
+                    <a href="./casestudy_rr.html">
+                        <div id="rrPrev" class="card anim" style="width:35rem">
+                            <div class="rrabsGrad"></div> 
+                            <div class="card-img-overlay">
+                              
+                                <div class="indexCardHeader">
+                                  
+                                    <div>
+                                        <h14 class="card-title">Rescue Riders</h14>
+                                    </div>
+                                    <div>
+                                        <h15>Non-Profit Redesign</h15>
+                                    </div>
+                                    <div class="additional-content">
+                                        <p class="rrPrevDescr">A case study and redesign for Rescue Riders’ Pet
+                                            Transportation Service website, both mobile and desktop formats. </p>
+                                        <button class="buttonViewWork active rounded-.5" id="home-tab2" data-bs-toggle="tab"
+                                            type="button" role="tab" aria-selected="true">
+                                            View Work
+                                        </button>
+                                    </div>
                                  
                                 </div>
-                                 
-                              
 
+                           
+                                <div class="image-wrapper">
+                                    <img src="./images/rrmainmock.svg" alt="Image" class="clipped-image">
+                                </div>
 
                             </div>
-                        </a>
-                    </div>
-                </div> -->
-                <div class="col-4">
-                    <div class="card">
-                        <img class="card-img" src="./images/rrmock.svg" alt="Rescue Riders Mockup">
-                        <div class="card-img-overlay">
-                          <h14 class="card-title">Rescue Riders</h14>
-                          <h15>Non-Profit Redesign</h15>
+
+                            <div class="scrolling row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4 scroll-container here">
+                                            <!-- Individual items inside the scrolling container -->
+                                            <div id="scroll1" class="scroll-item"><img src="./images/rrscroll1.svg">
+                                            </div>
+
+                                            <!-- Add more items as needed -->
+                                        </div>
+                                        <div class="col-4 scroll-container2 here">
+                                            <!-- Individual items inside the scrolling container -->
+
+                                            <div id="scroll2" class="scroll-item"><img src="./images/rrscroll2.svg">
+                                            </div>
+
+                                            <!-- Add more items as needed -->
+                                        </div>
+                                        <div class="col-3 scroll-container here">
+                                            <!-- Individual items inside the scrolling container -->
+                                            <div id="scroll3" class="scroll-item"><img src="./images/rrscroll3.svg">
+                                            </div>
+                                            <!-- Add more items as needed -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                      </div>
+                    </a>
+
                 </div>
-            
                 <!-- card 1 end -->
 
 
                 <!-- card 2 start Fora-->
                 <div class="col-4">
-                    <div class="card indexCardLink" style="width: 35rem;">
-                        <a href="./blogs.html">
-                            <div class="indexCardHeader">
-                                <h14>Fora</h14>
-                                <h15>Group Travel Planning Forum</h15>
-                                <div class="backgroundImg">
-                                    <img src="./images/foramock.svg" class="mockupB card-img-top">
+                    <a href="./casestudy_fora.html">
+                        <div id="foraPrev" class="card anim" style="width:35rem">
+                            <div class="foraabsGrad"></div> 
+                            <div class="card-img-overlay">
+                                <div class="indexCardHeader">
+                                    <div>
+                                        <h14 class="card-title">Fora</h14>
+                                    </div>
+                                    <div>
+                                        <h15>Group Travel Planning Forum</h15>
+                                    </div>
                                 </div>
-                              
-                                
 
+
+                                <div class="image-wrapper">
+                                    <img src="./images/foramainmock.svg" alt="Image" class="clipped-image">
+                                </div>
                             </div>
-                        </a>
-                    </div>
+                            <div class="card-body">
+                                <!-- Your card content goes here -->
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <!-- card 2 end -->
 
@@ -100,39 +231,41 @@
 
 
                 <!-- card 3 start -->
-            <div class="col-4">
-                <div class="card">
-                    <div class="card-img-overlay">
-                        <h14 class="card-title">Rescue Riders</h14>
-                        <h15>Non-Profit Redesign</h15>
-                      <div class="image-wrapper">
-                        <img src="./images/rrmock.svg" alt="Image" class="clipped-image">
-                      </div>
+                <div class="col-4">
+                    <div id="studiyoPrev" class="card anim" style="width:35rem">
+                        <div class="card-img-overlay">
+                            <div class="indexCardHeader">
+                                <div>
+                                    <h14 class="card-title">STUDIYO</h14>
+                                </div>
+                                <div>
+                                    <h15>DIY Platform</h15>
+                                </div>
+                            </div>
+
+
+                            <div class="image-wrapper">
+                                <img src="./images/studiyomainmock.svg" alt="Image" class="clipped-image">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <!-- Your card content goes here -->
+                        </div>
                     </div>
-                    <div class="card-body">
-                      <!-- Your card content goes here -->
-                    </div>
-                  </div>
-            </div>
-              
-                  
+                </div>
                 <!-- card 3 END-->
             </div>
 
         </div>
     </div>
 
+    <div class="another">
+
+    </div>
 
 
 
-    <!-- card 3 end -->
-    </div>
-    <!--row for cards END-->
-    </div>
-    </div>
-    <!--card container END-->
-    </div>
-    <!-- End row 3 -->
+
 
 
     <!--footer as described in instructions-->

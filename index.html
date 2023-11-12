@@ -26,6 +26,117 @@
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Outfit:wght@100;200;300;400;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <style>
+         /* Define default and variant styles */
+         .my-component {
+              /* Default styles */
+              background-color: #3498db;
+              color: #ffffff;
+              padding: 10px;
+              transition: background-color 0.3s ease;
+            }
+        
+            .my-component:hover {
+              /* Variant styles on hover */
+              background-color: #e74c3c;
+            }
+     /* Define default and variant styles */
+     .my-component {
+            /* Default styles */
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .my-component:hover {
+            /* Variant styles on hover */
+            background-color: #e74c3c;
+        }
+
+        #rrPrev:hover .additional-content {
+            display: block;
+            color: black;
+        }
+
+        #foraPrev:hover .additional-content {
+            display: block;
+            color: black;
+        }
+        #studiyoPrev:hover .additional-content {
+            display: block;
+            color: black;
+        }
+        .my-component:hover .additional-content {
+            display: block;
+        }
+
+        .scroll-container {
+            white-space: nowrap;
+
+            animation: scroll 60s linear infinite;
+            /* Adjust the time as needed */
+            animation-direction: alternate;
+        }
+
+        .scroll-container2 {
+            white-space: nowrap;
+
+            animation: scroll2 60s linear infinite;
+            /* Adjust the time as needed */
+            animation-direction: alternate;
+        }
+
+        .additional-content {
+            display: none;
+            position: absolute;
+            text-align: left;
+            padding-top: 1rem;
+        }
+
+
+        #rrPrev:hover .scrolling {
+            display: none !important;
+        }
+
+
+        #studiyoPrev:hover .scrolling {
+            display: none !important;
+        }
+
+        /* Define the animation keyframes */
+        @keyframes scroll {
+            0% {
+                transform: translateY(-200%);
+                /* Start offscreen to the right */
+            }
+
+            100% {
+                transform: translateX=Y(-200%);
+                /* Move offscreen to the left */
+            }
+        }
+
+        @keyframes scroll2 {
+            0% {
+                transform: translateY(-200%);
+                /* Start offscreen to the right */
+            }
+
+            100% {
+                transform: translateX=Y(-200%);
+                /* Move offscreen to the left */
+            }
+        }
+
+        /* Individual items inside the scrolling container */
+        .scroll-item {
+            display: flex;
+
+            /* Add your styling for the items */
+        }
+
+    </style>
 </head>
 
 
@@ -46,8 +157,8 @@
                         <div class="dropdown-content">
                             <a class="dropdown-item" type="button" href="./casestudy_rr.html">Rescue Riders</a>
                             <a class="dropdown-item" type="button" href="./casestudy_fora.html">Fora</a>
-                            <a class="dropdown-item" type="button" href="./studiyo.html">STUDIYO</a>
-                            <a class="dropdown-item" type="button" href="./doi.html">DOI Redesign</a>
+                            <a class="dropdown-item" type="button" href="./casestudy_studiyo.html">STUDIYO</a>
+                            <a class="dropdown-item" type="button" href="./casestudy_doi.html">DOI Redesign</a>
                         </div>
                     </div>
                 </li>
@@ -58,6 +169,9 @@
 
                 <li class="nav-item">
                     <a class="nav-link text-nowrap mx-2" href="./resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-nowrap mx-2" href="./art.html">Art</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-nowrap mx-2" href="./contact.html">Contact</a>
@@ -83,70 +197,113 @@
             <img src="./images/me.png" class="img-fluid mainImg">
         </div>
     </div>
-
+ <!-- HTML structure for your component -->
+      <div class="my-component">
+        <!-- Content goes here -->
+        Hover me!
+      </div>
     <!--card container START-->
     <div class="container-fluid">
         <div class="container">
             <div class="row">
 
-                <!-- card 1 start RR -->
-                <div class="col-4">
-                    <a href="./casestudy_rr.html">
-                        <div id="rrPrev" class="card anim" style="width:35rem">
-                            <div class="card-img-overlay toggle-trigger">
-                                <div class="indexCardHeader">
-                                    <div>
-                                        <h14 class="card-title">Rescue Riders</h14>
+                             <!-- card 1 start RR -->
+                             <div class="col-4">
+                                <a href="./casestudy_rr.html">
+                                    <div id="rrPrev" class="card anim" style="width:35rem">
+                                        <div class="rrabsGrad"></div> 
+                                        <div class="card-img-overlay">
+                                          
+                                            <div class="indexCardHeader">
+                                              
+                                                <div>
+                                                    <h14 class="card-title">Rescue Riders</h14>
+                                                </div>
+                                                <div>
+                                                    <h15>Non-Profit Redesign</h15>
+                                                </div>
+                                                <div class="additional-content">
+                                                    <p class="rrPrevDescr">A case study and redesign for Rescue Riders’ Pet
+                                                        Transportation Service website, both mobile and desktop formats. </p>
+                                                    <button class="buttonViewWork active rounded-.5" id="home-tab2" data-bs-toggle="tab"
+                                                        type="button" role="tab" aria-selected="true">
+                                                        View Work
+                                                    </button>
+                                                </div>
+                                             
+                                            </div>
+            
+                                       
+                                            <div class="image-wrapper">
+                                                <img src="./images/rrmainmock.svg" alt="Image" class="clipped-image">
+                                            </div>
+            
+                                        </div>
+            
+                                        <div class="scrolling row">
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-4 scroll-container here">
+                                                        <!-- Individual items inside the scrolling container -->
+                                                        <div id="scroll1" class="scroll-item"><img src="./images/rrscroll1.svg">
+                                                        </div>
+            
+                                                        <!-- Add more items as needed -->
+                                                    </div>
+                                                    <div class="col-4 scroll-container2 here">
+                                                        <!-- Individual items inside the scrolling container -->
+            
+                                                        <div id="scroll2" class="scroll-item"><img src="./images/rrscroll2.svg">
+                                                        </div>
+            
+                                                        <!-- Add more items as needed -->
+                                                    </div>
+                                                    <div class="col-3 scroll-container here">
+                                                        <!-- Individual items inside the scrolling container -->
+                                                        <div id="scroll3" class="scroll-item"><img src="./images/rrscroll3.svg">
+                                                        </div>
+                                                        <!-- Add more items as needed -->
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h15>Non-Profit Redesign</h15>
-                                    </div>
-                                    <div class="toggle-div">
-                                        <div class="rrPrevDescr">A case study and redesign for Rescue Riders’ Pet
-                                            Transportation Service website, both mobile and desktop formats. </div>
-                                        <button class="nav-link active rounded-.5" id="home-tab2" data-bs-toggle="tab"
-                                            type="button" role="tab" aria-selected="true">View Work</button>
-                                    </div>
-                                   
-                                </div>
-
-
-                                <div class="image-wrapper">
-                                    <img src="./images/rrmainmock.svg" alt="Image" class="clipped-image">
-                                </div>
+                                </a>
+            
                             </div>
-                            <div class="card-body">
-                                <!-- Your card content goes here -->
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-                <!-- card 1 end -->
+                            <!-- card 1 end -->
 
 
                 <!-- card 2 start Fora-->
                 <div class="col-4">
-                    <div id="foraPrev" class="card anim" style="width:35rem">
-                        <div class="card-img-overlay">
-                            <div class="indexCardHeader">
-                                <div>
-                                    <h14 class="card-title">Fora</h14>
+                    <a href="./casestudy_fora.html">
+                        <div id="foraPrev" class="card anim" style="width:35rem">
+                            <div class="card-img-overlay">
+                                <div class="indexCardHeader">
+                                    <div>
+                                        <h14 class="card-title">Fora</h14>
+                                    </div>
+                                    <div>
+                                        <h15>Group Travel Planning Forum</h15>
+                                    </div>
+                                    <div class="additional-content">
+                                        <p class="rrPrevDescr">A case study and design of Fora, a group-travel planning app for decision-making and detail-tracking. </p>
+                                        <button class="buttonViewWork active rounded-.5" id="home-tab2" data-bs-toggle="tab"
+                                            type="button" role="tab" aria-selected="true">
+                                            View Work
+                                        </button>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h15>Group Travel Planning Forum</h15>
-                                </div>
-                            </div>
 
 
-                            <div class="image-wrapper">
-                                <img src="./images/foramainmock.svg" alt="Image" class="clipped-image">
+                                <div class="image-wrapper">
+                                    <img src="./images/foramainmock.svg" alt="Image" class="clipped-image">
+                                </div>
                             </div>
+         
                         </div>
-                        <div class="card-body">
-                            <!-- Your card content goes here -->
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <!-- card 2 end -->
 
@@ -155,14 +312,24 @@
 
                 <!-- card 3 start -->
                 <div class="col-4">
+                    <a href="./casestudy_studiyo.html">
                     <div id="studiyoPrev" class="card anim" style="width:35rem">
+                        <div class="studiyoabsGrad"></div> 
                         <div class="card-img-overlay">
+                           
                             <div class="indexCardHeader">
                                 <div>
                                     <h14 class="card-title">STUDIYO</h14>
                                 </div>
                                 <div>
                                     <h15>DIY Platform</h15>
+                                </div>
+                                <div class="additional-content">
+                                    <p class="rrPrevDescr">A case study and prototype of a DIY-App to enhance community and support of DIY projects. </p>
+                                    <button class="buttonViewWork active rounded-.5" id="home-tab2" data-bs-toggle="tab"
+                                        type="button" role="tab" aria-selected="true">
+                                        View Work
+                                    </button>
                                 </div>
                             </div>
 
@@ -171,10 +338,36 @@
                                 <img src="./images/studiyomainmock.svg" alt="Image" class="clipped-image">
                             </div>
                         </div>
-                        <div class="card-body">
-                            <!-- Your card content goes here -->
+                        <div class="scrolling row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-4 scroll-container here">
+                                        <!-- Individual items inside the scrolling container -->
+                                        <div id="scroll1" class="scroll-item"><img src="./images/sdscroll1.svg">
+                                        </div>
+
+                                        <!-- Add more items as needed -->
+                                    </div>
+                                    <div class="col-4 scroll-container2 here">
+                                        <!-- Individual items inside the scrolling container -->
+
+                                        <div id="scroll2" class="scroll-item"><img src="./images/sdscroll2.svg">
+                                        </div>
+
+                                        <!-- Add more items as needed -->
+                                    </div>
+                                    <div class="col-3 scroll-container here">
+                                        <!-- Individual items inside the scrolling container -->
+                                        <div id="scroll3" class="scroll-item"><img src="./images/sdscroll3.svg">
+                                        </div>
+                                        <!-- Add more items as needed -->
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+                    </a>
                 </div>
                 <!-- card 3 END-->
             </div>
@@ -218,22 +411,14 @@
         dropdown.addEventListener("mouseleave", () => {
             dropdownContent.style.display = "none";
         });
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
-        $(document).ready(function () {
-            $('.toggle-trigger').hover(
-                function () {
-                    $('.toggle-div').addClass('show');
-                },
-                function () {
-                    $('.toggle-div').removeClass('show');
-                }
-            );
-        });
 
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+   
+
+ 
 </body>
 
 </html>
