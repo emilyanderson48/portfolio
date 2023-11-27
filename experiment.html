@@ -77,6 +77,15 @@
             display: none !important;
         }
 
+
+        body {
+      margin: 0;
+      height: 200vh; /* Set a height greater than the viewport to enable scrolling */
+      transition: background-color 0.5s ease; /* Transition for smooth color change */
+    }
+    .section {
+      height: 100vh; /* Set the height of each section */
+    }
         /* Define the animation keyframes */
         @keyframes scroll {
             0% {
@@ -125,12 +134,31 @@
     </div>
 
     <!-- Container for scrolling content -->
-
+<div class="container">
+    <div class="container-fluid">
+        <div id="exp1" class="row exp"></div>
+        <div id="exp2" class="row exp"></div>
+        <div id="exp3" class="row exp"></div>
+        <div id="exp4" class="row exp"></div>
+    </div>
+</div>
+    
 
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-
+                <div class="section" id="section1">
+                    <!-- Content for Section 1 -->
+                  </div>
+                
+                  <div class="section" id="section2">
+                    <!-- Content for Section 2 -->
+                  </div>
+                
+                  <div class="section" id="section3">
+                    <!-- Content for Section 3 -->
+                  </div>
+                
                 <!-- card 1 start RR -->
                 <div class="col-4">
                     <a href="./casestudy_rr.html">
@@ -258,10 +286,24 @@
 
         </div>
     </div>
-
-    <div class="another">
-
+<div class="container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 sq green">
+                <div class="row">
+                    <div id="studiyo1A" class="col-3 offset-1">
+                        <h3>PROJECT OVERVIEW</h3>
+                        <h4>Do It Yourself, Not By Yourself</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 sq white">
+                
+            </div>
+        </div>
     </div>
+</div>
+ 
 
 
 
@@ -293,6 +335,25 @@
         });
 
     </script>
+
+<script>
+    window.addEventListener('scroll', function() {
+      var section1 = document.getElementById('section1');
+      var section2 = document.getElementById('section2');
+      var section3 = document.getElementById('section3');
+
+      var scrollPosition = window.scrollY;
+
+      // Adjust these values based on the desired effect for each section
+      var colorValue1 = Math.min(scrollPosition / 2, 255);
+      var colorValue2 = Math.min(scrollPosition / 3, 255);
+      var colorValue3 = Math.min(scrollPosition / 4, 255);
+
+      section1.style.backgroundColor = 'rgb(' + 97 + ', ' + 132 + ', ' + 132 + ')';
+      section2.style.backgroundColor = 'rgb(' + colorValue2 + ', ' + colorValue2 + ', ' + colorValue2 + ')';
+      section3.style.backgroundColor = 'rgb(' + colorValue3 + ', ' + colorValue3 + ', ' + colorValue3 + ')';
+    });
+  </script>
 </body>
 
 </html>

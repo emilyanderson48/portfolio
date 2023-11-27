@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Emily Anderson Writing Portfolio</title>
+    <title>Emily Anderson Case Study: STUDYIO</title>
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -25,7 +25,33 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Outfit:wght@100;200;300;400;600;700;800;900&display=swap"
         rel="stylesheet">
+<style>
+    .scissor-bg {
+    background-color: #F3F3EE;
+    background-image: url('./images/studiyo/studiyo2scissors.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
+
+
+.split-bgL {
+      flex: 1;
+      background-color: #073D3D; 
+    }
+
+.matrix {
+    flex: 1;
+    background-color: white;
+    width: 100%;
+
+    
+   
+    
+}
+
+</style>
 </head>
 
 
@@ -33,8 +59,8 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-md" id="navMargin" stlye="background-color: white;">
-        <a class="navbar-brand logo" href="#">EMILY ANDERSON</a>
+    <nav class="navbar navbar-expand-md sticky-top" id="navMargin" style="background-color: white;">
+        <a class="navbar-brand logo" href="./index.html">EMILY ANDERSON</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -89,63 +115,59 @@
         </a>
     </div>
     <div class="container">
-        <div class="container-fluid">
-            <div id="studiyo1" class="row grid">
-                <div id="studiyo1A" class="col-3 offset-1">
-                    <h3>PROJECT OVERVIEW</h3>
-                    <h4>Do It Yourself, Not By Yourself</h4>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="row">
-                                <div class="col-1 offset-2">
-                                    <img class="studiyoProb" src="./images/studiyo/studiyo1problembutton.svg">
-                                </div>
-
-                            </div>
-
-                            <div class="row">
-                                <div class="col-9 offset-2">
-                                    <p>Currently, DIYers have a large variety of sources for project inspiration,
-                                        however, these methods often leave users with a lack of clarity on project
-                                        requirements including step-by-step instructions, needed materials, and a
-                                        community. This causes users to feel frustrated, unmotivated to start a project,
-                                        and ready to abandon projects. We want to provide users the space to do it
-                                        yourself--but not by yourself.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-1 offset-2">
-                                    <img class="studiyoProb" src="./images/studiyo/studiyo1solutionbutton.svg">
-                                </div>
-
-                            </div>
-                            <div class="row">
-                                <div class="col-9 offset-2">
-                                    <p>How might we provide DIYers with a user-generated-content forum for DIY project
-                                        inspiration,
-                                        discussion, instructions, and tracking in a social app?</p>
-                                </div>
-                            </div>
-                         
+        <div class="container-fluid content">
+            <div id="studiyo1A" class="row gridNew">
+                <div class="col-6 green">
+                    <div class="row">
+                        <div class="col-4 offset-3">
+                            <h3>PROJECT OVERVIEW</h3>
+                            <h4>Do It Yourself, Not By Yourself</h4>
                         </div>
                     </div>
-
-
-                    <div id="studiyo1groupbg" class="col-6">
-                        <img src="./images/studiyo/studiyo1group.svg">
+                    <div class="row">
+                        <div class="col-1 offset-3 stud1LabHolderA">
+                            <img class="studiyoProb" src="./images/studiyo/studiyo1problembutton.svg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9 offset-3 stud1Descr">
+                            <p>Currently, DIYers have a large variety of sources for project inspiration,
+                                however, these methods often leave users with a lack of clarity on project
+                                requirements including step-by-step instructions, needed materials, and a
+                                community. This causes users to feel frustrated, unmotivated to start a project,
+                                and ready to abandon projects. We want to provide users the space to do it
+                                yourself--but not by yourself.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 offset-3 stud1LabHolderB">
+                            <img class="studiyoProb" src="./images/studiyo/studiyo1solutionbutton.svg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9 offset-3 stud1Descr">
+                            <p>How might we provide DIYers with a user-generated-content forum for DIY project
+                                inspiration,
+                                discussion, instructions, and tracking in a social app?</p>
+                        </div>
                     </div>
                 </div>
-
-
-
-
-
-
+                <div class="col-6 sq white">
+                    <div class="row">
+    
+                        <div id="studiyo1groupbg" class="col-8 mx-auto">
+                            <img class="studiyo1Matrix" src="./images/studiyo/studiyo1group.svg">
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-fluid content">
+        
 
-            <div id="studiyo2" class="row grid">
+            <div id="studiyo2" class="row scissor-bg gridNew">
                 <div class="col-3 offset-1">
                     <h3>RESEARCH SYNTHESIS</h3>
                     <h4>Users Take On Extra Effort</h4>
@@ -154,7 +176,74 @@
                     <img id="studiyo2group" src="./images/studiyo/studiyo2group.svg">
                 </div>
             </div>
+
+            
+             
+              
+            </div>
         </div>
+
+        <div class="container">
+            <div class="container-fluid content">
+                <div id="studiyo2A" class="row gridNew">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-4 offset-3">
+                                <h3>FEATURE PRIORITIZATION</h3>
+                                <h4>What Do DIY-ers Need?</h4>
+                            </div>
+                        </div>
+                 
+                        <div class="row">
+                            <div class="col-9 offset-3 stud1Descr">
+                                <p>Currently, DIYers have a large variety of sources for project inspiration,
+                                    however, these methods often leave users with a lack of clarity on project
+                                    requirements including step-by-step instructions, needed materials, and a
+                                    community. This causes users to feel frustrated, unmotivated to start a project,
+                                    and ready to abandon projects. We want to provide users the space to do it
+                                    yourself--but not by yourself.</p>
+                            </div>
+                        </div>
+                  
+                        <div class="row">
+                            <div class="col-9 offset-3 stud1Descr">
+                                <p>How might we provide DIYers with a user-generated-content forum for DIY project
+                                    inspiration,
+                                    discussion, instructions, and tracking in a social app?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 sq white">
+                        <div class="row">
+        
+                            <div class="col-8">
+                                <img id="studiyo3group" src="./images/studiyo/studiyo3matrix.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container-fluid content">
+            
+    
+                <div id="studiyo4" class="row gridNew">
+                    <div class="col-3 offset-1">
+                        <h3>COMPETITOR ANALYSIS</h3>
+                        <h4>Building Trust Is Our Priority</h4>
+                    </div>
+                    <div class="row">
+                        <img id="studiyo4group" src="./images/studiyo4table.svg">
+                    </div>
+                </div>
+    
+                
+                 
+                  
+                </div>
+            </div>
 
         <!--footer as described in instructions-->
         <div class="row footerChunk">

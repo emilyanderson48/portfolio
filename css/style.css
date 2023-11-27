@@ -6,6 +6,7 @@ body {
 
 p {
     font-family: outfit;
+    font-size: 1.1rem;
 }
 
 p a {
@@ -44,9 +45,7 @@ h4 {
     line-height: .88px;
 }
 
-.slideTitles {
-    max-width: 15rem!important;
-}
+
 /* h5 not in use */
 /* h6 not in use */
 /* h7 not in use */
@@ -116,9 +115,21 @@ a:hover {
 
 /* card styling */
 
+.cardLg {
+  
+    /* this border doesn't show up on index because index is technically only the header */
+    border: none!important;
+    border-radius: 0 !important;
+ 
+    overflow: hidden;
+    /* Clip content that overflows the card */
+    position: relative;
+    /* Create a positioning context */
+}
+
 .card {
     /* this border doesn't show up on index because index is technically only the header */
-    border: .25px solid blackt;
+    border: none!important;
     border-radius: 0 !important;
     width: 35rem;
     overflow: hidden;
@@ -127,7 +138,6 @@ a:hover {
     /* Create a positioning context */
 }
 
-.card:hover {}
 
 .indexCard {
     /* this border doesn't show up on index because index is technically only the header */
@@ -222,24 +232,11 @@ a:hover {
 .here {
     height: 20rem;
 }
-.scrolling {
-    z-index: 1;
-    display: flex;
-    font-size: 0;
-    margin-left: .1rem!important;
-}
-.scroll-item {
-    flex: ;
-}
-.scroll-container {
-    flex: 1;
-}
-.scroll-container2 {
-    flex: 1;
-}
-#scroll2 {
-   margin-top: -6rem;
-}
+
+/* scroll features START */
+
+/* scroll features END */
+
 .clipped-image2 {
     z-index: .01;
     scale: 90%;
@@ -259,27 +256,6 @@ a:hover {
 
 
 
-#rrPrev:hover .clipped-image {
-    animation-name: card-phone-rise;
-    animation-duration: 1.2s;
-    animation-play-state: initial;
-    /*transform: translateY(-40%);*/
-    -webkit-animation-fill-mode: forwards;
-}
-#foraPrev:hover .clipped-image {
-    animation-name: card-phone-rise;
-    animation-duration: 1.2s;
-    animation-play-state: initial;
-    /*transform: translateY(-40%);*/
-    -webkit-animation-fill-mode: forwards;
-}
-#studiyoPrev:hover .clipped-image {
-    animation-name: card-phone-rise;
-    animation-duration: 1.2s;
-    animation-play-state: initial;
-    /*transform: translateY(-40%);*/
-    -webkit-animation-fill-mode: forwards;
-}
 .card-title {
     z-index: 100!important;
 }
@@ -355,6 +331,8 @@ a:hover {
     background: linear-gradient(180deg, #073D3D 38.58%, rgba(7, 61, 61, 0.95) 42.43%, rgba(7, 61, 61, 0.90) 46.13%, rgba(7, 61, 61, 0.79) 53.67%, rgba(7, 61, 61, 0.00) 80.93%);
     z-index: 60;
 }
+
+/* art START */
 .art1 {
     position: absolute;
     height:40rem;
@@ -374,6 +352,9 @@ a:hover {
     position: relative;
     height:40rem;
 }
+
+/* art END */
+
 .foraabsGrad {
     position: absolute;
     top: 0;
@@ -399,9 +380,21 @@ a:hover {
     background-color: #122B37;
     position: relative;
 }
-.another {
-    height: 20rem;
-    background: red;
+
+#rrPrevLg {
+    color: white;
+    background-color: #122B37;
+    position: relative;
+}
+
+
+.green {
+    background: #618484;
+}
+
+.white {
+    
+    background: white;
 }
 
 .buttonViewWork {
@@ -431,14 +424,32 @@ a:hover {
     display: flex;
 }
 
+/* styling for index card previews START */
 #foraPrev {
     color: white;
     background-color: #3B4968;
 }
-
 #studiyoPrev {
     color: white;
     background-color: #073D3D;
+}
+#rrPrev:hover {
+    animation: rr-color-change;
+    animation-duration: 1s;
+    animation-direction: forward;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+#foraPrev:hover {
+    color: black;
+    background-color: white;
+    animation: fora-color-change;
+    animation-duration: 1s;
+    animation-direction: forward;
+    box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
 #studiyoPrev:hover {
@@ -447,33 +458,82 @@ a:hover {
     animation: sdiyo-color-change;
     animation-duration: 1s;
     animation-direction: forward;
+    box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
-#foraPrev:hover {
-    color: black;
-    background-color: white;
-    animation: fora-color-change;
-    animation-duration: 1s;
-    animation-direction: forward;
+#studiyoPrevLg {
+    color: white;
+    background-color: #073D3D;
 }
 
-#rrPrev:hover {
-    animation: rr-color-change;
-    animation-duration: 1s;
-    animation-direction: forward;
-    color: black;
-    background-color: white;
-}
+    /* all additional content styling on hover START*/
+    .additional-content {
+        display: none;
+        position: absolute;
+        text-align: left;
+        padding-top: 1rem;
+    }
 
-#rrPrev:hover .rrabsGrad {
-   display: none;
-}
-#studiyoPrev:hover .studiyoabsGrad {
-    display: none;
- }
-#rrPrev:hover .additional-content {
-   display: block;
-}
+    #rrPrev:hover .additional-content {
+        display: block;
+        color: black;
+    }
+    #foraPrev:hover .additional-content {
+        display: block;
+        color: black;
+    }
+    #studiyoPrev:hover .additional-content {
+        display: block;
+        color: black;
+    }
+    /* all additional content styling on hover END*/
+
+    /* scrolling styling on hover START*/
+    #rrPrev:hover .scrolling {
+        display: none !important;
+    }
+    #studiyoPrev:hover .scrolling {
+        display: none !important;
+    }
+    /* scrolling styling on hover END*/
+
+    /* all absolute positioned gradients styling on hover START*/
+    #rrPrev:hover .rrabsGrad {
+        display: none;
+     }
+    #studiyoPrev:hover .studiyoabsGrad {
+        display: none;
+    }
+    /* all absolute positioned gradients styling on hover END*/
+
+    /* all .clipped-image styling on hover START*/
+    #rrPrev:hover .clipped-image {
+    animation-name: card-phone-rise;
+    animation-duration: 1.2s;
+    animation-play-state: initial;
+    /*transform: translateY(-40%);*/
+    -webkit-animation-fill-mode: forwards;
+    }
+    #foraPrev:hover .clipped-image {
+    animation-name: card-phone-rise;
+    animation-duration: 1.2s;
+    animation-play-state: initial;
+    /*transform: translateY(-40%);*/
+    -webkit-animation-fill-mode: forwards;
+    }
+    #studiyoPrev:hover .clipped-image {
+    animation-name: card-phone-rise;
+    animation-duration: 1.2s;
+    animation-play-state: initial;
+    /*transform: translateY(-40%);*/
+    -webkit-animation-fill-mode: forwards;
+    }
+    /* all .clipped-image styling on hover END*/
+
+/* styling for index card previews END */
+
+
+
 
 
 
@@ -559,115 +619,189 @@ a:hover {
 #studiyo1  {
     color: white;
     background-color: #618484;
+
 }
 
+#studiyo3 {
+    
+    color: white;
+}
+
+.studiyo3L {
+
+    flex: 1;
+    background-color: #073D3D;
+  }
+
+  .studiyo3R{
+    flex: 1;
+    background-color: white;
+  }
+
 #studiyo1A {
+    color: white;
+    
+   
+}
+
+#studiyo3A {
+    color: white;
+    
+   
+}
+#studiyo2A {
+    background-color: #073D3D;
+    color: white;
+}
+
+
+/* spline formatting START */
+
+.spline { 
+    max-width: 60rem!important;
+}
+
+
+/* spline formatting END */
+/* chatGPT scroll experiment START */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.parallax-container {
+    position: relative;
+    top: 0rem;
+    width: 100%;
+    height: 30rem; /* Set the height of your parallax container */
+    overflow: hidden;
+    background-color: red;
+   
+ 
+}
+.other {
+    background-color:;
+    height: 55rem;
+}
+.parallax-image {
+    background-image: url('/images/rrdesk1.png'); /* Replace with your image path */
+    background-size: cover;
+    scale: 125%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -16rem;
+    background-attachment: fixed;
+    transform: translateZ(0);
+    z-index: 1;
+}
+.parallax {
+    overflow: auto;
+}
+.content {
+    /* Add some space for your main content */
+    padding: 20px;
+}
+/* chatGPT scroll experiment END */
+.exp {
+    height:60rem;
+}
+
+#exp1 {
+    
+}
+#exp2 {
+ 
+}
+#exp3 {
     
 }
 
-#studiyo2  {
-    color: black;
-    background-color: #F3F3EE;
-    background-image: url(./images/studiyo/studiyo2scissors.svg);
-    background-size: cover;
-    background-repeat: none;
+#exp4 {
+  ;
 }
-
 #studiyo2group {
     scale: 80%;
 }
 
+#studiyo4group {
+    scale: 60%;
+}
+#studiyo3group {
+    scale: 70%;
+    justify-self: center!important;
+    background-color: white;
+
+}
+.stud1LabHolderA {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.stud1LabHolderB {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 .studiyoProb {
 width: 12.875rem;
 height: 3.5625rem;
 scale: 90%;
 
+
 }
 
+#studiyo4 {
+    background-color: #D8D8CF;
+}
+.stud1Descr {
+    padding-left: 1.5rem!important;
+    padding-right: 8rem!important;
+}
 #studiyo1groupbg {
+  
     background-color: white!important;
+ 
+}
+
+
+
+.matrix {
+    display: flex;
+   
     align-items: center!important;
-    justify-content: center!important;
+  
 }
 /* STUDIYO END */
 
 
 
 
-
-
 /* navbar STARTS */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Adjust the z-index as needed */
+  }
+.nav {
+    padding-left: 5.94rem !important;
+    margin-right: 5.94rem !important;
+}
 
 
 #navMargin {
-    margin-left: 5rem;
-    margin-right: 5rem;
+padding-left: 5rem;
+padding-right: 5rem;
 
 
 }
 
 
-.navbar {}
-
-
-.docPrev {
-    justify-content: center !important;
-    align-items: center;
-    display: flex !important;
-    position: relative;
-    height: 50rem;
-    background-color: white;
-    margin-top: 4rem !important;
-    margin-bottom: 4rem !important;
 
 
 
 
-}
-
-
-.doc {
-    position: abosulte;
-    left: 60rem !important;
-    right: 10rem !important;
-    width: 50rem;
-    height: 100%;
-    justify-content: center !important;
-    border: .75px #464646 solid;
-
-
-}
-
-
-.essayDescr {
-    position: relative;
-}
-
-.essayDescrItem {
-    position: absolute;
-    left: 10rem;
-
-
-    background: #D9D9D9;
-    width: 16.75rem !important;
-    height: 16.125rem !important;
-}
-
-
-
-
-.homeIcon {
-    scale: 40%;
-    display: inline-flex;
-    justify-self: center;
-}
-
-
-.homeIcon:hover {
-    cursor: pointer;
-
-
-}
 
 
 .nav-item {
@@ -705,15 +839,10 @@ scale: 90%;
 }
 
 
-.nav {
-    margin-left: 5.94rem !important;
-    margin-right: 5.94rem !important;
-}
-
 
 .auto1 {
     background-color: white;
-    height: 6rem;
+    height: 3.5rem;
     /* navbar drop shadow */
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.03);
     padding-top: 4rem;
@@ -722,15 +851,10 @@ scale: 90%;
     /*
     padding-right: 5.94rem;
     */
-
-
-
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 
 
 
@@ -741,21 +865,11 @@ scale: 90%;
 
 }
 
-
-
-
 .logo {
-
-
     font-size: 2rem !important;
     text-decoration: none;
     font-family: outfit;
-
-
 }
-
-
-
 
 .largeLogo {
     font-size: 5.125rem;
@@ -829,6 +943,17 @@ scale: 90%;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+/* this is making the height of every slide the same */
+.slide {
+    height: 52.375rem;
+}
+.slideTitles {
+    max-width: 15rem!important;
+}
+.valueProp {
+    margin-top: 4rem;
+    margin-bottom: 3.04rem;
+}
 
 /* general casestudy formatting END */
 
@@ -839,15 +964,6 @@ scale: 90%;
     padding-left: 6.25rem;
 }
 
-/* this is making the height of every slide the same */
-.slide {
-    height: 52.375rem;
-}
-
-.valueProp {
-    margin-top: 4rem;
-    margin-bottom: 3.04rem;
-}
 
 .imageContainer img {
     width: 100%
@@ -895,8 +1011,15 @@ scale: 90%;
 }
 
 .grid {
-    margin-left: 6.25rem!important;
-    margin-right: 6.25rem!important;
+    width: 108rem;
+    height: 52.375rem;
+    padding-left: 6.25rem!important;
+    padding-right: 6.25rem!important;
+}
+.gridNew {
+
+    height: 52.375rem;
+
 }
 /* begin "semiSlide" (insert between slides 1 & 2) */
 
@@ -1028,14 +1151,22 @@ scale: 90%;
     display: inline-block;
     margin-top: 0rem;
     margin-left: 5rem !important;
-
-
 }
 
 .subNav a:hover {
     text-decoration: underline !important;
 }
+.homeIcon {
+    scale: 40%;
+    display: inline-flex;
+    justify-self: center;
+}
 
+.homeIcon:hover {
+    cursor: pointer;
+
+
+}
 .subH12 {
     align-self: center;
     vertical-align: center;
@@ -1050,20 +1181,6 @@ body {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1087,9 +1204,6 @@ body {
 
 
 /* begin Research Insights (row 3) */
-
-
-
 
 
 .workStuff {
@@ -1302,7 +1416,41 @@ body {
 
 /* blog section END */
 
+/* doc writing stuff START */
+.docPrev {
+    justify-content: center !important;
+    align-items: center;
+    display: flex !important;
+    position: relative;
+    height: 50rem;
+    background-color: white;
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+}
 
+.doc {
+    position: abosulte;
+    left: 60rem !important;
+    right: 10rem !important;
+    width: 50rem;
+    height: 100%;
+    justify-content: center !important;
+    border: .75px #464646 solid;
+}
+
+.essayDescr {
+    position: relative;
+}
+
+.essayDescrItem {
+    position: absolute;
+    left: 10rem;
+    background: #D9D9D9;
+    width: 16.75rem !important;
+    height: 16.125rem !important;
+}
+
+/* doc writing stuff END */
 
 
 .aboutMe {
@@ -1311,16 +1459,13 @@ body {
     padding-top: 4rem;
 }
 
-
-
-
 .homeDescr {
     width: 49.5rem;
     padding-left: 13.5rem;
     padding-top: 4rem;
 }
 
-
+/* footer START */
 .footerLogo {
     color: white !important;
     padding-bottom: 1.25rem;
@@ -1350,6 +1495,7 @@ body {
 
 
 }
+/* footer END */
 
 /* animations START */
 @keyframes card-phone-rise {
