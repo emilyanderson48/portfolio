@@ -621,7 +621,14 @@ a:hover {
     background-color: #618484;
 
 }
-
+.studiyoPersonaBlob {
+    scale: 80%;
+    height: 5.0625rem;
+}
+.studiyo1Matrix {
+    justify-self: center;
+    align-self: center!important;
+}
 #studiyo3 {
     
     color: white;
@@ -653,8 +660,53 @@ a:hover {
     background-color: #073D3D;
     color: white;
 }
+#studiyo7 {
+    background-color: #white;
+    color: black;
+}
+#studiyo8 {
+    background-color: #618484;
+    color: white;
+}
+.studiyo7group {
+    justify-self: center!important;
+    align-self: center!important;
+    width: 79.125rem!important;
+}
 
+.studiyo8img {
+    width: 14.3rem;
+height: 30.98331rem;
+justify-items: space-around!important;
+}
 
+.studiyo8imgs {
+    justify-content: space-evenly!important;
+}
+#studiyo5A {
+    background-color:#618484;
+    color: white;
+}
+#studiyo5B {
+    background-color: #F3F3EE!important;
+    height: 47.315rem;
+    padding-left: 6.19rem;
+ 
+
+}
+
+#studiyo5B h14 {
+    padding-top: 2rem;
+}
+#studiyo6 {
+    width: 108rem;
+height: 84.25rem;
+}
+.autumnPersona {
+   padding-top: 13rem;
+   padding-left: 2rem!important;
+   scale: 250%;
+}
 /* spline formatting START */
 
 .spline { 
