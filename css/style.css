@@ -674,10 +674,32 @@ a:hover {
     width: 79.125rem!important;
 }
 
+
+.studiyo8imgHolder {
+    display: flex;
+    padding-left: 5rem!important;
+    padding-right: 5rem!important;
+    justify-content: space-around!important;
+}
+
+.studiyo8text {
+    max-width: 8rem;
+    text-align: center;
+}
+
+.studiyo8textHolder {
+    display: flex;
+    padding-left: 6.5rem!important;
+    padding-right: 6.5rem!important;
+
+    justify-content: space-around!important;
+}
+
+
 .studiyo8img {
     width: 14.3rem;
 height: 30.98331rem;
-justify-items: space-around!important;
+justify-self: center;
 }
 
 .studiyo8imgs {
@@ -694,6 +716,15 @@ justify-items: space-around!important;
  
 
 }
+.studiyo5imgCol {
+    align-content: center!important;
+}
+.studiyo5imgHolder {
+
+    width: 8.87894rem!important;
+    height: 8.64875rem!important;
+}
+
 
 #studiyo5B h14 {
     padding-top: 2rem;
