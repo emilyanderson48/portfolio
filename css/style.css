@@ -85,6 +85,17 @@ h16 {
     font-size: 1rem;
 }
 
+/*used for landing logo */
+h17 {
+    font-size: 8rem;
+}
+/*used for index section headers */
+h18 {
+    font-size: 3rem;
+}
+.landingLogo {
+    line-height: 100%;
+}
 /* headers END */
 
 /* links */
@@ -104,7 +115,11 @@ a:hover {
 
 
 /* index styling START */
-
+.indexSubHeader {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 .container {
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -195,7 +210,7 @@ a:hover {
     position: relative;
     /* Set the card width and height as desired */
     width: 30rem;
-    height: 20rem !important;
+
 }
 
 .card-img-overlay {
@@ -215,7 +230,7 @@ a:hover {
 }
 
 .clipped-image {
-
+    scale: 120%;
     /* Make the image full width of the wrapper */
     height: auto;
     /* Allow the image to maintain its aspect ratio */
@@ -223,7 +238,7 @@ a:hover {
     /* Position the image absolutely within the wrapper */
     object-fit: none;
     /* Maintain aspect ratio and cover the entire wrapper */
-    right: 0.5rem;
+    right: 4rem;
     top: 50%;
     /* Center the image vertically */
     transform: translateY(-35%);
@@ -308,8 +323,8 @@ a:hover {
     z-index: 100!important;
     padding-bottom: 6rem;
     text-align: left;
-    padding-left: 3.12rem;
-    padding-top: 1.12rem;
+    padding-left: 4rem;
+    padding-top: 2rem;
   
 
 }
@@ -355,6 +370,9 @@ a:hover {
 
 /* art END */
 
+.logosvg {
+    scale: 100%;
+}
 .foraabsGrad {
     position: absolute;
     top: 0;
@@ -379,6 +397,7 @@ a:hover {
     color: white;
     background-color: #122B37;
     position: relative;
+    border-radius: .25rem!important;
 }
 
 #rrPrevLg {
@@ -411,8 +430,7 @@ a:hover {
     background-color: #B2DAFF;
 }
 .rrPrevDescr {
-    width: 12.9375rem;
-    height: 7.5rem;
+    width: 24rem;
     color: black!important;
 }
 
@@ -432,6 +450,7 @@ a:hover {
 #studiyoPrev {
     color: white;
     background-color: #073D3D;
+    border-radius: .25rem!important;
 }
 #rrPrev:hover {
     animation: rr-color-change;
@@ -471,7 +490,7 @@ a:hover {
         display: none;
         position: absolute;
         text-align: left;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
     }
 
     #rrPrev:hover .additional-content {
@@ -733,7 +752,11 @@ justify-self: center;
 width: 108rem;
 height: 84.25rem;
 }
-
+.studiyo6StoryRow {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    justify-content: center!important;
+}
 #studiyo6 p {
     width: 26.56rem;
     text-align: center;
@@ -769,9 +792,9 @@ body, html {
    
  
 }
-.other {
-    background-color:;
-    height: 55rem;
+.landing {
+    background-color:white;
+    height: 53rem;
 }
 .parallax-image {
     background-image: url('/images/rrdesk1.png'); /* Replace with your image path */
@@ -818,6 +841,7 @@ body, html {
 #studiyo4group {
     scale: 60%;
 }
+/* makes matrix bg white/splits slide bg green and white */
 #studiyo3group {
     scale: 70%;
    
@@ -826,7 +850,39 @@ body, html {
 
 
 }
+/* attempt to make horizontal split color group above storyboard*/
 
+#studiyo6group {
+    background-color: #618484!important;
+    display: flex;
+    color: rgb(23, 8, 8);
+    width: 100%;
+    height: 21.6875rem;
+    flex-shrink: 0;
+    z-index: -1;
+}
+
+.studiyo6OnTop {
+    position: relative;
+    top: -13rem;
+    padding-left: 4rem!important;
+    padding-right: 4rem!important;
+}
+
+.studiyo6imgs {
+   
+    scale: 80%;
+    justify-self: end;
+   
+}
+
+.studiyo6StoryP {
+    text-align: center!important;
+    display:block;
+    justify-content: center!important;
+    padding-left: 2rem;
+    width: 26rem;
+}
 .marginAdjust {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -1327,17 +1383,15 @@ body {
     margin-left: 10rem;
     margin-top: 10rem;
 }
-
+/* index home formatting */
 .imgPlacement {
-
-
     position: absolute;
-    top: 6rem !important;
-    right: 1rem;
+    top: 12rem !important;
+    right: .75rem;
 }
 
-.mainImg {
-    scale: 60%;
+.selfPortrait {
+    scale: 105%;
     float: right;
 }
 
@@ -1647,3 +1701,7 @@ body {
 /* animations END */
 
 /* Media Queries */
+@media (max-width: 576px) {
+    /* Your CSS rules for small screens here */
+    
+}   
